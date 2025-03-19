@@ -7,10 +7,9 @@
     <title>Document</title>
     <script src="https://kit.fontawesome.com/109388adc7.js" crossorigin="anonymous"></script>
 </head>
-<body class="bg-blue-500">
+<body>
     <header class="relative bg-cover bg-center h-[600px] text-white" style="background-image: url('/front-end/img/Фото.svg');">
         <div class="absolute inset-0 bg-black opacity-50"></div>
-      
         <div class="relative z-10 max-w-5xl mx-auto px-6 py-10 text-center">
           <div class="flex justify-between items-center">
             <div class="flex gap-8 mr-"><img src="/front-end/img/Лого.svg" alt="">
@@ -39,16 +38,42 @@
             <button class="justify-between w-[160px] h-[50px] px-4 py-2 bg-gray-200 text-black rounded">Выезд <i class="fa-solid fa-calendar-days ml-[50px]"></i></button>
             <button class="w-[160px] h-[50px] px-4 py-2 bg-gray-200 text-black rounded">0 Гостей</button>
             <button class="w-[160px] h-[50px] px-4 py-2 bg-gray-200 text-black rounded">1 Номер</button>
-            <button class="w-[250px] h-[50px] px-4 py-2 bg-blue-500 text-white rounded">Найти жилье</button>
+            <button class="w-[250px] h-[50px] px-4 py-2 bg-blue-500 text-white rounded cursor-pointer hover:bg-white hover:text-blue-500" onclick="window.location='findhouse.html';">Найти жилье</button>
           </div>
         </div>
-      </header>
+    </header>
       <section>
-        <div class="ml-[400px]">
-            <img src="./img/Group.svg" alt="">
-            <h1 class="text-white">Коммисия - 0%</h1>
-            <p class="text-white w-[200px]">Эксклюзивно! Только при бронировании у нас вы можете быть уверены, что платите ТОЛЬКО собственнику</p>
-        </div>
-      </section>
+        <div class="flex flex-row h-[315px] bg-blue-500 justify-around text-white py-10 px-[350px] text-center space-y-8">
+          <div class="max-w-xs flex flex-col items-center mt-[5px]">
+              <div class="text-4xl mb-4">
+                <img src="./img/Group.svg" alt="">
+              </div>
+              <h3 class="text-xl font-semibold">Комиссия - 0%</h3>
+              <p class="mt-2 text-sm">
+                  Эксклюзивно! Только при бронировании у нас вы можете быть уверены, что платите ТОЛЬКО собственнику.
+              </p>
+          </div>
+          
+          <div class="max-w-xs flex flex-col items-center mt-[10px]">
+              <div class="text-4xl mb-4">
+                <img src="./img/Groupgarant.svg" alt="">
+              </div>
+              <h3 class="text-xl font-semibold">Надежно 100%</h3>
+              <p class="mt-2 text-sm">
+                  Мы проверяем каждое объявление и гарантируем никаких «чёрных» маклеров.
+              </p>
+          </div>
+  
+          <div class="w-xs flex flex-col items-center">
+              <div class="text-4xl mb-4">
+                <img src="./img/Groupsale.svg" alt="">
+              </div>
+              <h3 class="text-xl font-semibold">Гарантия низкой цены</h3>
+              <p class="mt-2 text-sm">
+                  Мы готовы предложить вам объекты по самым низким ценам в Ялте!
+              </p>
+          </div>
+      </div>
+    </section>
 </body>
 </html>

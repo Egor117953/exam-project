@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/109388adc7.js" crossorigin="anonymous"></script>
+</head>
+<body class="bg-gray-100">
+    <header class="flex gap-6 p-6">
+        <div class="w-1/4 flex flex-col gap-4">
+            <button class="w-full h-[50px] rounded-lg bg-gradient-to-r from-blue-400 to-blue-600 text-white text-lg flex items-center justify-center">
+                Показать на карте <i class="fa-solid fa-map ml-2"></i>
+            </button>
+
+            <div class="p-4 bg-white shadow-lg rounded">
+                <h3 class="text-lg font-semibold mb-3">Фильтры</h3>
+                <div class="flex flex-col gap-4">
+                    <div>
+                        <label for="price" class="block text-sm font-medium text-gray-700">Цена</label>
+                        <input type="range" id="price" name="price" min="0" max="10000" step="100" class="w-full">
+                        <span class="text-sm text-gray-500">От 0 до 10000 ₽</span>
+                    </div>
+
+                    <div>
+                        <label for="guests" class="block text-sm font-medium text-gray-700">Количество гостей</label>
+                        <input type="number" id="guests" name="guests" min="1" max="10" class="w-full border rounded p-2">
+                    </div>
+
+                    <div>
+                        <label for="rooms" class="block text-sm font-medium text-gray-700">Количество комнат</label>
+                        <select id="rooms" name="rooms" class="w-full border rounded p-2">
+                            <option value="1">1 комната</option>
+                            <option value="2">2 комнаты</option>
+                            <option value="3">3 комнаты</option>
+                            <option value="4">4 комнаты</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700">Удобства</label>
+                        <div class="flex gap-4">
+                            <div class="flex items-center">
+                                <input type="checkbox" id="wifi" name="wifi" class="mr-2">
+                                <label for="wifi" class="text-sm">Wi-Fi</label>
+                            </div>
+                            <div class="flex items-center">
+                                <input type="checkbox" id="parking" name="parking" class="mr-2">
+                                <label for="parking" class="text-sm">Парковка</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="mt-4 w-full py-2 bg-blue-500 text-white rounded">Применить фильтры</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="w-3/4 flex flex-col gap-4">
+            <div class="flex bg-white p-4 rounded-lg shadow-lg gap-6">
+                <img src="./img/Flat (1).svg" alt="Квартира" class="w-40 h-40 rounded-lg">
+                <div class="flex flex-col justify-between flex-grow">
+                    <div>
+                        <div class="flex gap-1 mb-2">
+                            <img src="./img/Звезда 1.svg" alt="">
+                            <img src="./img/Звезда 1.svg" alt="">
+                            <img src="./img/Звезда 1.svg" alt="">
+                            <img src="./img/Звезда 1.svg" alt="">
+                            <img src="./img/Звезда 1.svg" alt="">
+                        </div>
+                        <h3 class="text-lg font-semibold">3-комнатная квартира</h3>
+                        <p class="text-gray-500">700 м до моря</p>
+                        <p class="text-gray-600">Ливадия, Виноградная ул, 6А</p>
+                        <p class="text-blue-500 text-sm mt-2">32м2 | 4 гостя | 1 спальная | 1 кровать</p>
+                        <div class="flex gap-4 mt-2">
+                            <img src="./img/smart-refrigerator.svg" alt="Холодильник">
+                            <img src="./img/air-conditioner.svg" alt="Кондиционер">
+                            <img src="./img/parking.svg" alt="Парковка">
+                            <img src="./img/wifi-signal.svg" alt="Wi-Fi">
+                            <img src="./img/+ 4.svg" alt="Еще">
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col items-center justify-center">
+                    <p class="text-gray-800 font-bold text-3xl">3000 ₽</p>
+                    <p class="text-gray-500">Сутки</p>
+                    <button class="border-2 border-blue-500 text-blue-500 px-4 py-2 mt-3 rounded w-36">
+                        Смотреть
+                    </button>
+                    <button class="bg-gradient-to-r from-blue-400 to-blue-600 text-white px-4 py-2 mt-3 rounded w-36">
+                        Забронировать
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+    </header>
+</body>
+</html>
